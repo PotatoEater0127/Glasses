@@ -1,0 +1,109 @@
+.co-branding-block {
+  background: center / cover
+    url("../img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
+  padding: 64px 0px 480px 0px;
+}
+.co-branding-block .title {
+  margin-bottom: 60px;
+}
+.co-branding-block__top {
+  display: flex;
+  margin-bottom: 60px;
+}
+.co-branding-block__top .wrapper {
+  display: flex;
+}
+
+.co-branding-block__bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.co-branding-block__bottom .wrapper {
+  position: relative;
+  width: 49%;
+}
+.co-branding-block__bottom .wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.co-branding-block__bottom .wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.co-branding-block__bottom .wrapper p {
+  position: absolute;
+  font-size: 60px;
+  line-height: 108px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.r,
+.r__b__r {
+  flex-direction: column;
+}
+
+.l {
+  margin-right: 8px;
+}
+.r__t {
+  margin-bottom: 8px;
+}
+.r__b__l {
+  margin-right: 8px;
+}
+.r__b__r__t {
+  margin-bottom: 8px;
+}
+.r__b__r__b {
+  justify-content: flex-end;
+}
+.r__b__r__b img {
+  max-width: 30%;
+}
+
+@media (max-width: 991px) {
+  .co-branding-block {
+    padding: 40px 0px 417px 0px;
+  }
+  .co-branding-block .title {
+    margin-bottom: 32px;
+  }
+  .co-branding-block__top {
+    margin-bottom: 40px;
+  }
+  .co-branding-block__bottom .wrapper p {
+    font-size: 2rem;
+  }
+  .co-branding-block__bottom .wrapper img {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .co-branding-block {
+    padding-top: 24px;
+    padding-bottom: 190px;
+  }
+  .co-branding-block .title {
+    margin-bottom: 16px;
+  }
+  .co-branding-block__top {
+    margin-bottom: 20px;
+  }
+
+  .co-branding-block__bottom .wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .co-branding-block__bottom .wrapper:last-of-type {
+    margin-bottom: 0px;
+  }
+}
