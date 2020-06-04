@@ -43,6 +43,9 @@
   width: 80px;
   height: 50px;
 }
+.ham-icon {
+  display: none;
+}
 
 @media (max-width: 991px) {
   .header__nav {
@@ -62,12 +65,24 @@
 
 @media (max-width: 767px) {
   .header__nav {
+    flex-direction: column;
+    align-items: stretch;
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0 0 0;
   }
   .header__list {
     display: none;
+    width: auto;
+  }
+  .header__list.active {
+    display: block;
+  }
+  .header__list li {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: center;
+    border-top: 1px solid #fff;
   }
 
   .title-block {
@@ -84,5 +99,13 @@
   .logo {
     width: 48px;
     height: 30px;
+    margin: 0px auto 10px auto;
+  }
+
+  .ham-icon {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 13px;
   }
 }
