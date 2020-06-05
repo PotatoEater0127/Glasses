@@ -12,6 +12,7 @@
 }
 .co-branding-block__top .wrapper {
   display: flex;
+  align-items: flex-start;
 }
 
 .co-branding-block__bottom {
