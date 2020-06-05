@@ -6,6 +6,14 @@
 }
 .classic-block__picture {
   width: 65%;
+  cursor: pointer;
+}
+/* second picture */
+.classic-list__item:nth-of-type(2) .classic-block__picture {
+  filter: grayscale(1);
+}
+.classic-list__item:nth-of-type(2) .classic-block__picture:hover {
+  filter: grayscale(0);
 }
 
 .classic-list__item {

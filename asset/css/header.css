@@ -65,17 +65,24 @@
 
 @media (max-width: 767px) {
   .header__nav {
+    position: relative;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     padding: 10px 0 0 0;
   }
   .header__list {
-    display: none;
-    width: auto;
+    position: absolute;
+    display: block;
+    top: 100%;
+    width: 100%;
+    transition: max-height 0.8s;
+    max-height: 0px;
+    background-color: #aa0601;
+    overflow: hidden;
   }
   .header__list.active {
-    display: block;
+    max-height: 500px;
   }
   .header__list li {
     height: 60px;
