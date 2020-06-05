@@ -44,6 +44,7 @@
   line-height: 14px;
   margin: 4px 4px 0px 0px;
   width: 16px;
+  font-size: 14px;
 }
 .form__checkbox:checked + .form__label:before {
   color: black;
