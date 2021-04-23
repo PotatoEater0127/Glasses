@@ -3,9 +3,6 @@
     url("../img/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png");
   padding: 64px 0px 480px 0px;
 }
-.co-branding-block .title {
-  margin-bottom: 60px;
-}
 .co-branding-block__top {
   display: flex;
   margin-bottom: 60px;
@@ -45,6 +42,11 @@
   white-space: nowrap;
 }
 
+
+.r__b.wrapper {
+  align-items: stretch;
+}
+
 .r,
 .r__b__r {
   flex-direction: column;
@@ -63,10 +65,16 @@
   margin-bottom: 8px;
 }
 .r__b__r__b {
-  justify-content: flex-end;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
 }
-.r__b__r__b img {
-  max-width: 30%;
+.r__b__r__b.wrapper {
+  align-items: center;
+}
+.r__b__r__b.wrapper p {
+  background-color: white;
+  padding: 0 10px 0 10px;
 }
 
 @media (max-width: 991px) {
